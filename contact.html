@@ -1,0 +1,54 @@
+<!-- contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Me - NYC Explorer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>NYC Explorer: Plan Your Custom Itinerary</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="itinerary.html">Itinerary</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-form">
+      <h2>Let's Build Your NYC Adventure!</h2>
+      <p>Fill out the form below to work with me on a custom itinerary tailored to your interests.</p>
+
+      <form action="#" method="POST">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="days">Trip Duration (in days):</label>
+        <input type="number" id="days" name="days" min="1" max="30" required>
+
+        <label for="interests">What are you most interested in? (e.g., food, museums, parks, shopping)</label>
+        <textarea id="interests" name="interests" rows="4" required></textarea>
+
+        <label for="halal">Need Halal Options?</label>
+        <select id="halal" name="halal">
+          <option value="yes">Yes, please</option>
+          <option value="no">No, not necessary</option>
+          <option value="flexible">Flexible</option>
+        </select>
+
+        <button type="submit">Send Request</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 NYC Explorer by Alesha</p>
+  </footer>
+</body>
+</html>
